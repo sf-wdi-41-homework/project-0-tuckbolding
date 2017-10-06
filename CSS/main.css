@@ -1,0 +1,14 @@
+.square {
+  color:black;
+  border-color:black;
+}
+
+.content {
+  color:black;
+  border-color:inherit;
+}
+
+.row {
+  height:750px;
+  color:grey;
+}
