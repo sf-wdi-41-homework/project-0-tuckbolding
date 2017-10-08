@@ -1,4 +1,4 @@
-.square {
+/*.square {
   color:black;
   border-color:black;
 }
@@ -6,9 +6,29 @@
 .content {
   color:black;
   border-color:inherit;
+}*/
+.container {
+    position:relative;
+}
+.row1, .row2 {
+    position: relative;
+    width: 80%;
+    height: 128px;
+    color: grey;
+    border: 1px solid black;
+    background-color: rgba(188,185,185,0.5);
+    margin: 0 auto;
+}
+.player1 {
+    position:absolute;
+    left: ;
 }
 
-.row {
-  height:750px;
-  color:grey;
+.player2 {
+    position:absolute;
+    left: ;
+}
+
+h1 {
+   text-align: center;
 }
