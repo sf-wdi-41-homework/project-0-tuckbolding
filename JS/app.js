@@ -1,20 +1,22 @@
-//Create Gameboard
-  //must have startline, Grid to move cars up, and finishline to determine winner
-
-var player1Grid =[];
-var player2Grid =[];
+//Create Gameboard (done in HTML)
 
 //Establish doc.ready function to listen for keypresses
 $(document).ready(function(){
 
   // listen for keypress event on the document
   $(document).keypress(function(event){
-    if(event.which === 102){
-      player1Move();
-      console.log("pressed: " + event.which);
-    }
-  })
+    // while(1){
+      if(event.which === 102){
+        player1Move();
+        console.log("pressed: " + event.which);
+      }
+      if(event.which === 106){
+        player2Move();
+        console.log("pressed: " + event.which);
+      }
+    })
 
+  // }
 
 });
 
@@ -23,16 +25,12 @@ $(document).ready(function(){
       //cars move a grid space on button click (using jquery)
     function player1Move(){
           //Player1 move
-            $('.player1').css('left', function( left ) {
-              return left + 50;
-            });
+          console.log($('.player1').css('left', "+=50px") );
     }
     //Player2 move
     function player2Move(){
           //Player2 move
-          $('.player2').css('left', function( left ) {
-            return left + 50;
-          });
+          console.log($('.player2').css('left', "+=50px") );
     }
     //Check for winner
       //after each button click, check to see if Car value === finishline value in Grid array
